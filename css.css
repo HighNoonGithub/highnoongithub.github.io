@@ -110,5 +110,8 @@ input{
 	border-radius:3px;
 	margin:10px 0 0 9px;
 	background:linear-gradient(to top, #FEFFFF,#E5EEFA);
-
+}
+.work{
+	margin-left: 600px;
+	position:relative;
 }

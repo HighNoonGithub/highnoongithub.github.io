@@ -22,17 +22,15 @@
         	<button class="panel2" onclick="onPush()">Правка</button>
         	<button class="panel3" onclick="onPush()">Справка</button>
         </div>
-		<input>
+		<input type="text" id="field" value="">
 		<div class="block2">
 		<button type="button" value="--">--</button>  <button type="button" value="CE">CE</button>  <button type="button" value="C">C</button> <button type="button" value="+-">+-</button>  <button type="button" value="cor">cor</button>
-		<button type="button" value="7">7</button>  <button type="button" value="8">8</button>  <button type="button" value="9">9</button> <button type="button" value="/">/</button>  <button type="button" value="%">%</button>
-		<button type="button" value="4">4</button>  <button type="button" value="5">5</button>  <button type="button" value="6">6</button> <button type="button" value="*">*</button>  <button type="button" value="1/x">1/x</button>
-		<div class="per" ><button type="button" value="1">1</button>  <button type="button" value="2">2</button>  <button type="button" value="3">3</button> <button type="button" value="-">-</button> <button class="zero" type="button" value="0">0</button>  <button type="button" value=",">,</button> <button type="button" value="+">+</button></div>  
+		<button type="button" value="7" onclick="NumInput(val7)" id="val7">7</button>  <button type="button" value="8" onclick="NumInput(val8)" id="val8">8</button>  <button type="button" value="9" onclick="NumInput(val9)" id="val9">9</button> <button type="button" value="/">/</button>  <button type="button" value="%">%</button>
+		<button type="button" value="4" onclick="NumInput(val4)" id="val4">4</button>  <button type="button" value="5" onclick="NumInput(val5)" id="val5">5</button>  <button type="button" value="6" onclick="NumInput(val6)" id="val6">6</button> <button type="button" value="*">*</button>  <button type="button" value="1/x">1/x</button>
+		<div class="per" ><button type="button" value="1" id="one" onclick="">1</button>  <button type="button" value="2" onclick="NumInput(val2)" id="val2">2</button>  <button type="button" value="3" onclick="NumInput(val3)" id="val3">3</button> <button type="button" value="" -"" onclick="Operator("op")" id="op">-</button> <button class="zero" type="button" value="0" onclick="NumInput(val0)" id="val0">0</button>  <button type="button" value=",">,</button> <button type="button" value="+">+</button></div>  
 		  <div class="equally1"><button type="button" value="=" class="equally">=</button></div>
 	    </div>
-	</div>	
-
-
+	</div>		
 	</body>
 
 </html>
