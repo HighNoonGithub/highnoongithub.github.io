@@ -8,7 +8,7 @@
 	border-left:7px solid #B2D3F4;
 	border-right:7px solid #B2D3F4;
 	border-bottom: 7px solid #B2D3F4;
-    border-radius:7px;
+	border-radius:7px;
 }
 .block1{
 	box-sizing:border-box;
@@ -19,7 +19,7 @@
 	font-size: 13px;
 }
 #kn1{
-    height:15px;
+	height:15px;
 	width:45px; 
 	border: 1px solid #542C25;
 	position:absolute;
@@ -28,14 +28,14 @@
 	border-radius:0 0 4px 0;
 }
 #kn2{
-height:15px;
+	height:15px;
 	width:25px; 
 	border: 1px solid black;
 	position:absolute;
 	margin:-5px 0 0 56px;
 }
 #kn3{
-    height:15px;
+	height:15px;
 	width:25px; 
 	border: 1px solid black;
 	position:absolute;
@@ -58,21 +58,21 @@ height:15px;
 .panel1{
 	width:30px; 
 	height:19px;
-border: 1px solid transparent;
-font-size:12px;
-padding: 0 5px 0 5px;
+	border: 1px solid transparent;
+	font-size:12px;
+	padding: 0 5px 0 5px;
 }
 .panel2{
 	width:55px; 
 	height:19px;
-border: 1px solid transparent;
-font-size:12px;
+	border: 1px solid transparent;
+	font-size:12px;
 }
 .panel3{
 	width:60px; 
 	height:19px;
-border: 1px solid transparent;
-font-size:12px; 
+	border: 1px solid transparent;
+	font-size:12px; 
 }
 .block2{
 	margin:5px 0 0 7px;
