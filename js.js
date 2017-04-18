@@ -7,8 +7,18 @@ one.onclick = function() {
 	field.value+=one.value;
 };
 function NumInput(num){
-	field.value+= num;
+	field.value+= +num;
 }
-function Operator(op){
-	field.value+= op.value;
+function Operator(){
+	field.value+= minys.value;
 }
+function Operat(){
+	field.value+= plus.value;
+}
+function Ravno(){
+	field.value = +field.value;
+}
+function e(){
+	field.value = "";
+}
+
