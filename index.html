@@ -5,11 +5,11 @@
 	<meta charset="UTF=8"/>
 	<title></title>
 	<link href="css.css" rel="stylesheet" type="text/css"/>
-
+<script src="js.js"></script>
 </head>
 
 <body>
-	<script src="js.js"></script>
+	
 	<div class="block">
 		<div class="block1">
 			Калькулятор
@@ -22,7 +22,7 @@
 			<button class="panel2" onclick="onPush()">Правка</button>
 			<button class="panel3" onclick="onPush()">Справка</button>
 		</div>
-		<input type="text" id="field" value="" onkeyup="return proverka(this);"onclick ="e()">
+		<input type="text" id="field" value="" "onclick ="e()" readonly>
 		<div class="block2">
 			<button type="button" value="--">--</button>  <button type="button" value="CE">CE</button>  <button type="button" value="C" id="clear">C</button> <button type="button" value="+-">+-</button>  <button type="button" value="cor">cor</button>
 			<button type="button" value="7" onclick="NumInput(7)" id="val7">7</button>  <button type="button" value="8" onclick="NumInput(8)" id="val8">8</button>  <button type="button" value="9" onclick="NumInput(9)" id="val9">9</button> <button type="button" value="/">/</button>  <button type="button" value="%">%</button>
@@ -31,16 +31,7 @@
 			<div class="equally1"><button type="button" value="=" class="equally" onclick="Ravno()">=</button></div>
 		</div>
 	</div>	
-	<script type="text/javascript"> 
-function proverka(input) { 
-    var value = input.value; 
-    var rep = /[-\.;":'a-zA-Zа-яА-Я 1234567890]/; 
-    if (rep.test(value)) { 
-        value = value.replace(rep, ''); 
-        input.value = value; 
-    } 
-} 
-</script>
+	
 <script>
     document.getElementById("clear").onclick = function(){
 	document.getElementById("field").value = "";
