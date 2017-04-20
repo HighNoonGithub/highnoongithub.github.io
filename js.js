@@ -26,7 +26,7 @@ function buttonPress(value) {
         
     }
 elements.forEach(function(item) {
-  str += item;
+  str = item;
   });
 field.value = str;
 }
