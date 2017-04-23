@@ -37,9 +37,11 @@ function Operat(){
 	field.value+= plus.value;
 }
 function Ravno(){
-	
+	elements.forEach(function(item, i){
+  alert(i + ": " + item  );
+  });
 }
-function e(){
-	field.value = "";
+function C(){
+	elements = [];
+	field.value = elements;
 }
-
