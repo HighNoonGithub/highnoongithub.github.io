@@ -5,9 +5,7 @@ var str = "";
 function onPush(){
 	alert('Съебал');
 }
-one.onclick = function() {
-	field.value+=one.value;
-};
+
 function buttonPress(value) {
     if (typeof value === "number") {
         if (elements.length === 0) {
@@ -34,7 +32,7 @@ function Operator(){
 	field.value+= minys.value;
 }
 function Operat(){
-	field.value+= plus.value;
+	
 }
 function Ravno(){
 	elements.forEach(function(item, i){
