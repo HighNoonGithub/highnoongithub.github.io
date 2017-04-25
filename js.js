@@ -7,47 +7,43 @@ function onPush(){
 }
 
 function buttonPress(value) {
-    if (typeof value === "number") {
-        if (elements.length === 0) {
-            elements.push(value);
-        } else {
-            var index = elements.length - 1;
-            var lastElement = elements[index];
-            if (typeof lastElement === "number") {
-                elements[index] = parseInt(elements[index].toString() + value.toString());
-            } else {
-                elements.push(value);
-            }
-        }
-    } else if (typeof value === "string" && elements.length > 0) {
-        elements.push(value);
-        
-    }
-elements.forEach(function(item) {
-  str = item;
-  });
-field.value = elements.join(" ");
+	if (typeof value === "number") {
+		if (elements.length === 0) {
+			elements.push(value);
+		} else {
+			var index = elements.length - 1;
+			var lastElement = elements[index];
+			if (typeof lastElement === "number") {
+				elements[index] = parseInt(elements[index].toString() + value.toString());
+			} else {
+				elements.push(value);
+			}
+		}
+	} else if (typeof value === "string" && elements.length > 0) {
+		elements.push(value);
+
+	}
+	field.value = elements.join(" ");
 }
 
 function Ravno(){
-if(elements.indexOf('*')){
-var multi = elements.indexOf('*');
-var multiplication = elements[multi-1] * elements[multi+1];
-}
-if(elements.indexOf('/')){
-var divis = elements.indexOf('/');  
-var division = elements[divis-1] / elements[divis+1]
-}
-if(elements.indexOf('+')){
-var add = elements.indexOf('+');
-var addition = elements[add-1] + elements[add+1];
-}
-if(elements.indexOf('-')){
-var	dif = elements.indexOf('-');
-var difference = elements[dif-1] - elements[dif+1];
-}
-
-
+	for(var i = 1 ; i<length.elements-1 ; i+2 ){
+		var znach = elements[0];
+		if(elements[i] == "*"){
+			znach = elements[i+1]*znach;
+		}
+	    if(elements[i] == "/"){
+		    znach = elements[i+1]/znach;
+		}
+		if(elements[i] == "+"){
+			znach = elements[i+1]+znach; 
+		}
+		if(elements[i] == "-"){
+			znach = elements[i+1]-znach;
+		}
+	}
+ return znach;
+ alert(znach);
 }
 function C(){
 	elements = [];
