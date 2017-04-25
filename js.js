@@ -26,18 +26,28 @@ function buttonPress(value) {
 elements.forEach(function(item) {
   str = item;
   });
-field.value = str;
+field.value = elements.join(" ");
 }
-function Operator(){
-	field.value+= minys.value;
-}
-function Operat(){
-	
-}
+
 function Ravno(){
-	elements.forEach(function(item, i){
-  alert(i + ": " + item  );
-  });
+if(elements.indexOf('*')){
+var multi = elements.indexOf('*');
+var multiplication = elements[multi-1] * elements[multi+1];
+}
+if(elements.indexOf('/')){
+var divis = elements.indexOf('/');  
+var division = elements[divis-1] / elements[divis+1]
+}
+if(elements.indexOf('+')){
+var add = elements.indexOf('+');
+var addition = elements[add-1] + elements[add+1];
+}
+if(elements.indexOf('-')){
+var	dif = elements.indexOf('-');
+var difference = elements[dif-1] - elements[dif+1];
+}
+
+
 }
 function C(){
 	elements = [];
